@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Time Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="leftContainer">
+        <table id="prayerTable">
+            <thead>
+                <tr>
+                    <th class="tableHeader">Prayer</th>
+                    <th class="tableHeader">Prayer Time Start</th>
+                    <th class="tableHeader">Zamat time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fajr</td>
+                    <td id="fajrTime"></td>
+                    <td id="fazrZamatTime"></td>
+                </tr>
+                <tr>
+                    <td>Zuhr</td>
+                    <td id="zuhrTime"></td>
+                    <td id="zuhrZamatTime"></td>
+                </tr>
+                <tr>
+                    <td>Asr</td>
+                    <td id="asrTime"></td>
+                    <td id="asrZamatTime"></td>
+                </tr>
+                <tr>
+                    <td>Maghrib</td>
+                    <td id="maghribTime"></td>
+                    <td id="maghribZamatTime"></td>
+                </tr>
+                <tr>
+                    <td>Isha</td>
+                    <td id="ishaTime"></td>
+                    <td id="ishaZamatTime"></td>
+                </tr>
+                <tr>
+                    <td>Jummah</td>
+                    <td id="jummahTime"></td>
+                    <td id="jummahZamatTime"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="rightContainer">
+        <h3 id="mainTitle">St. Albans Islamic Center</h3>
+        <h1 id="time"></h1>
+        <h2 id="date"></h2>
+        <p id="remainTime"></p>
+        <p id="sunset"></p>
+        
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    display: flex; /* Use flexbox for layout */
+    background-color: #b2cabc;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+#leftContainer {
+    flex: 1; /* Allow the table to take up space on the left */
+    padding: 20px; /* Add some padding */
+}
+
+#rightContainer {
+    flex: 1; /* Allow the right side to take up equal space */
+    text-align: center; /* Center the text in the right container */
+    padding: 20px; /* Add some padding */
+}
+
+#mainTitle {
+    font-size: 5em;
+    margin: 0; /* Simplified margin */
+    color: #2c3e50; /* Darker color for better contrast */
+}
+
+#time {
+    font-size: 5em;
+    color: #2e2c19;
+    margin-top: 20px;
+}
+
+#date {
+    font-size: 4em;
+    color: #312626;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+#remainTime {
+    font-size: 5em;
+    margin: 2% 0; /* Simplified margin */
+    color: rgb(0, 0, 0);
+    background-color: #70c973;
+    border-radius: 15px;
+    padding: 15px;
+}
+/*for sunset and sunrise*/
+
+#sunset {
+    font-size: 3em;
+    color: #000000;
+    background: linear-gradient(to top, #e0f170, #89bf70);
+    padding: 30px;
+  
+}
+
+
+
+
+
+
+
+/* Centering the table */
+#prayerTable {
+    max-height: 100%;
+    margin: 0; /* Remove default margin */
+    border-collapse: collapse;
+    width: 100%; /* Full width for the table */
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Style for table headers */
+.tableHeader {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 25px; /* Standardized padding */
+    text-align: center;
+    font-size:4em; /* Reduced header size for better proportion */
+}
+
+/* Style for table rows */
+#prayerTable td {
+    font-weight: bold;
+    padding: 40px; /* Slightly less padding for better spacing */
+    text-align: center;
+    font-size: 3em; /* Slightly smaller font size */
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra stripe effect for alternate rows */
+#prayerTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+#prayerTable tr:hover {
+    background-color: #e2e2e2;
+}
+
+/* Add borders and spacing */
+#prayerTable th,
+#prayerTable td {
+    border: 1px solid #ddd;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #time {
+        font-size: 2.5em;
+    }
+
+    #date {
+        font-size: 1.7em;
+    }
+
+    #prayerTable {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #prayerTable th,
+    #prayerTable td {
+        font-size: 0.9em; /* Smaller text on small screens */
+        padding: 10px; /* Consistent padding */
+    }
+}
